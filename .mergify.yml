@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: automatic merge for Dependabot pull requests
+  - name: automatic merge for Renovate pull requests
     conditions:
-      - author~=^dependabot(|-preview)\[bot\]$
+      - author=renovate[bot]
       - check-success=Travis CI - Pull Request
     actions:
       merge:
